@@ -1,0 +1,117 @@
+body{
+font-family: "Battambang", "Noto Sans Khmer", sans-serif;
+margin:0;
+background:#f6f7fb;
+color:#333;
+}
+
+/* Header */
+header{
+background:linear-gradient(135deg,#1c75b6,#4fa3d9);
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+header h1{
+margin:10px 0;
+font-size:30px;
+}
+
+header p{
+font-size:16px;
+}
+
+/* Container */
+.container{
+max-width:1100px;
+margin:auto;
+padding:30px 20px;
+}
+
+/* Section Title */
+.section-title{
+font-size:24px;
+color:#1c75b6;
+margin-bottom:20px;
+font-weight:bold;
+}
+
+/* Agenda Card */
+.agenda{
+display:grid;
+grid-template-columns:150px 1fr;
+background:white;
+margin-bottom:15px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.agenda:hover{
+transform:translateY(-3px);
+}
+
+/* Time */
+.time{
+background:#1c75b6;
+color:white;
+padding:20px;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+/* Activity */
+.activity{
+padding:20px;
+}
+
+/* Booths */
+.booths{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.booth{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.booth:hover{
+transform:translateY(-5px);
+}
+
+.booth h3{
+color:#f7941d;
+}
+
+.booth ul{
+padding-left:20px;
+}
+
+/* Footer */
+footer{
+text-align:center;
+padding:20px;
+background:#1c75b6;
+color:white;
+margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+.agenda{
+grid-template-columns:1fr;
+}
+
+.time{
+justify-content:flex-start;
+}
+}
